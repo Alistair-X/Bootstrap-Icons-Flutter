@@ -51,6 +51,7 @@ export default async function () {
     fileContent,
   );
 }
+
 function toHex(str: string) {
   var result = '';
   for (var i = 0; i < str.length; i++) {
@@ -58,6 +59,7 @@ function toHex(str: string) {
   }
   return result;
 }
+
 function iconsFromGlyphsData(data: GlyphData[]): Icon[] {
   var icons: Icon[] = [];
   data.forEach(({ metadata }) => {
